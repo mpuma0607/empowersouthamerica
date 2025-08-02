@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button"
 import { Menu, X, ChevronDown, ChevronRight } from "lucide-react"
 import { useTenantConfig, useTranslation } from "@/contexts/tenant-context"
 import { isFeatureHidden } from "@/lib/tenant-config"
+import { LanguageSwitcher } from "@/components/language-switcher"
 
 const navigationItems = [
   {
@@ -486,6 +487,9 @@ export default function Navigation() {
             <Link href="/support" className="text-gray-700 hover:text-green-600 font-medium transition-colors">
               Get Support
             </Link>
+
+            {/* Language Switcher */}
+            <LanguageSwitcher />
           </div>
 
           {/* Mobile Menu Button */}
